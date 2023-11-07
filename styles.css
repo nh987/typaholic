@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #533cea
+}
+
+body, .quote-input {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
+}
+
+.container {
+    position: relative;
+    background-color: #E7DFC6;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 700px;
+    max-width: 90%;
+}
+
+.title {
+    position: absolute;
+    top: 1rem;
+    font-size: 1.5rem;
+    color: #E7DFC6;
+    
+}
+
+.timer {
+    position: absolute;
+    top: 8rem;
+    font-size: 3rem;
+    color: #E7DFC6;
+    font-weight: bold;
+}
+
+.quote-display {
+    margin-bottom: 1rem;
+    margin-left: calc(1rem - 2px);
+    margin-right: calc(1rem + 2px);
+}
+
+.quote-input {
+    background-color: transparent;
+    border: 2px solid rgb(188, 181, 161);
+    outline: none;
+    width: 100%;
+    height: 8rem;
+    margin: auto;
+    resize: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+}
+
+.quote-input:focus {
+    border-color: black;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
+
+.wpm {
+    position: absolute;
+    bottom: 12.5rem;
+    font-size: 1.5rem;
+    color: #E7DFC6;
+
+}
+
+.label {
+    position: absolute;
+    bottom: 10.5rem;
+    font-size: 1.5rem;
+    color: #E7DFC6;
+}
+
+.best {
+    position: absolute;
+    bottom: 6.5rem;
+    font-size: 1.5rem;
+    color: #E7DFC6;
+}
+
+.bestlabel {
+    position: absolute;
+    bottom: 4.5rem;
+    font-size: 1.5rem;
+    color: #E7DFC6;
+}
+
+.skip {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -5px;
+    font-size: 1rem;
+    color: #E7DFC6;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #E7DFC6;
+    border-radius: 0.5rem;
+
+}
