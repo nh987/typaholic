@@ -10,6 +10,15 @@ const button = document.getElementById('skip')
 button.addEventListener('click', () => {
     renderNewQuote()
 })
+
+document.addEventListener("keydown", handleShortcut);
+function handleShortcut(event) {
+    if (event.altKey && event.key === "n") {
+        event.preventDefault();
+        renderNewQuote()
+    }
+}
+
 quoteInputElement.addEventListener('input', () => {
     const arrayQuote = quoteDisplayElement.querySelectorAll('span')
     const arrayValue = quoteInputElement.value.split('')
@@ -35,9 +44,8 @@ quoteInputElement.addEventListener('input', () => {
     
     if (correct) {
         renderNewQuote()
-        console.log(best.innerText)
-        wpm.innerText = Math.floor((arraySentence.split(' ').length / timerElement.innerText) * 60)
-        if (wpm.innerText > best.innerText) {
+        wpm.innerText = Math.floor((arraySentence.split(' ').length / Number(timerElement.innerText)) * 60)
+        if (wpm.innerText > Number(best.innerText)) {
             best.innerText = wpm.innerText
         }
     }
