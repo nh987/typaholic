@@ -8,13 +8,52 @@ body {
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #4a7ba6
+    background-image: linear-gradient(to top right,#2d388a, #00aeef)
 }
 
 body, .quote-input {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif 
 }
 
+/*
+.colorBlock {
+    width: 70px;
+    height: 70px;
+  }
+  #color1 {
+    position: absolute;
+    background-image: linear-gradient(#4a7ba6, #4a7ba6);
+    border: 2px solid #E7DFC6;
+    border-radius: 2rem;
+    margin-left: 75rem;
+    margin-bottom: 15rem;
+  }
+  #color2 {
+    position: absolute;
+    background-image: linear-gradient(to top right,#2d388a, #00aeef);
+    border: 2px solid #E7DFC6;
+    border-radius: 2rem;
+    margin-left: 75rem;
+    margin-bottom: 5rem;
+    
+  }
+  #color3 {
+    position: absolute;
+    background-image: linear-gradient(to top right, #184e68, #57ca85);
+    border: 2px solid #E7DFC6;
+    border-radius: 2rem;
+    margin-left: 75rem;
+    margin-top: 5rem;
+  }
+  #color4 {
+    position: absolute;
+    background-image: linear-gradient(to top right, #622774, #C53364);
+    border: 2px solid #E7DFC6;
+    border-radius: 2rem;
+    margin-left: 75rem;
+    margin-top: 15rem;
+  }
+*/
 .container {
     position: relative;
     background-color: #E7DFC6;
@@ -145,4 +184,54 @@ body, .quote-input {
   .skip:hover .tiptext {
     visibility: visible;
     opacity: 1;
+  }
+
+.colors {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #E7DFC6;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid #E7DFC6;
+    border-radius: 0.5rem;
+}
+ /* The actual popup */
+.colors .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .colors .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .colors .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
   }
