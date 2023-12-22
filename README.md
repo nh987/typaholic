@@ -1,2 +1,2 @@
 # typaholic
- Speed typing game
+ Fun little typing game, made in HTML CSS and JavaScript.
